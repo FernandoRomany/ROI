@@ -10,6 +10,14 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    
+    @IBOutlet weak var ppcTxt: TextField!
+    @IBOutlet weak var costOfSellTxt: TextField!
+    @IBOutlet weak var numOfSellTxt: TextField!
+    @IBOutlet weak var advCostTxt: TextField!
+    @IBOutlet weak var yourROIIsLbl: UILabel!
+    @IBOutlet weak var resultROILbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +27,17 @@ class MainVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func clearPressed(_ sender: Any) {
+        
+        ppcTxt.text = ""
+        costOfSellTxt.text = ""
+        numOfSellTxt.text = ""
+        advCostTxt.text = ""
+        yourROIIsLbl.isHidden = true
+        resultROILbl.isHidden = true
+        
+    }
+    
 }
 

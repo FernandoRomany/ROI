@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED197D1A20599E5500881E8C /* ROI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED197D1920599E5500881E8C /* ROI.swift */; };
+		ED197D232059A06F00881E8C /* ROITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED197D222059A06F00881E8C /* ROITests.swift */; };
+		ED197D2A2059A07700881E8C /* ROI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED197D1920599E5500881E8C /* ROI.swift */; };
 		ED5234F0205891C400DE83FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5234EF205891C400DE83FF /* AppDelegate.swift */; };
 		ED5234F2205891C400DE83FF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5234F1205891C400DE83FF /* MainVC.swift */; };
 		ED5234F5205891C400DE83FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED5234F3205891C400DE83FF /* Main.storyboard */; };
@@ -15,7 +18,21 @@
 		ED523504205893E700DE83FF /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED523503205893E700DE83FF /* TextField.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		ED197D252059A06F00881E8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED5234E4205891C400DE83FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED5234EB205891C400DE83FF;
+			remoteInfo = ROI;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		ED197D1920599E5500881E8C /* ROI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROI.swift; sourceTree = "<group>"; };
+		ED197D202059A06E00881E8C /* ROITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ROITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED197D222059A06F00881E8C /* ROITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROITests.swift; sourceTree = "<group>"; };
+		ED197D242059A06F00881E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED5234EC205891C400DE83FF /* ROI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ROI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5234EF205891C400DE83FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED5234F1205891C400DE83FF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -27,6 +44,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		ED197D1D2059A06E00881E8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED5234E9205891C400DE83FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +61,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED197D1B20599E5900881E8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED197D1920599E5500881E8C /* ROI.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED197D212059A06F00881E8C /* ROITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED197D222059A06F00881E8C /* ROITests.swift */,
+				ED197D242059A06F00881E8C /* Info.plist */,
+			);
+			path = ROITests;
+			sourceTree = "<group>";
+		};
 		ED5234E3205891C400DE83FF = {
 			isa = PBXGroup;
 			children = (
 				ED5234EE205891C400DE83FF /* ROI */,
+				ED197D212059A06F00881E8C /* ROITests */,
 				ED5234ED205891C400DE83FF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				ED5234EC205891C400DE83FF /* ROI.app */,
+				ED197D202059A06E00881E8C /* ROITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +99,7 @@
 		ED5234EE205891C400DE83FF /* ROI */ = {
 			isa = PBXGroup;
 			children = (
+				ED197D1B20599E5900881E8C /* Model */,
 				ED5235012058939D00DE83FF /* Controller */,
 				ED523502205893AD00DE83FF /* View */,
 				ED5234EF205891C400DE83FF /* AppDelegate.swift */,
@@ -86,6 +130,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		ED197D1F2059A06E00881E8C /* ROITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED197D272059A06F00881E8C /* Build configuration list for PBXNativeTarget "ROITests" */;
+			buildPhases = (
+				ED197D1C2059A06E00881E8C /* Sources */,
+				ED197D1D2059A06E00881E8C /* Frameworks */,
+				ED197D1E2059A06E00881E8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED197D262059A06F00881E8C /* PBXTargetDependency */,
+			);
+			name = ROITests;
+			productName = ROITests;
+			productReference = ED197D202059A06E00881E8C /* ROITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		ED5234EB205891C400DE83FF /* ROI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED5234FE205891C400DE83FF /* Build configuration list for PBXNativeTarget "ROI" */;
@@ -113,6 +175,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Fernando Romany";
 				TargetAttributes = {
+					ED197D1F2059A06E00881E8C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ED5234EB205891C400DE83FF;
+					};
 					ED5234EB205891C400DE83FF = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -133,11 +200,19 @@
 			projectRoot = "";
 			targets = (
 				ED5234EB205891C400DE83FF /* ROI */,
+				ED197D1F2059A06E00881E8C /* ROITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		ED197D1E2059A06E00881E8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED5234EA205891C400DE83FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,6 +226,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		ED197D1C2059A06E00881E8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED197D2A2059A07700881E8C /* ROI.swift in Sources */,
+				ED197D232059A06F00881E8C /* ROITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED5234E8205891C400DE83FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,10 +242,19 @@
 				ED523504205893E700DE83FF /* TextField.swift in Sources */,
 				ED5234F2205891C400DE83FF /* MainVC.swift in Sources */,
 				ED5234F0205891C400DE83FF /* AppDelegate.swift in Sources */,
+				ED197D1A20599E5500881E8C /* ROI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED197D262059A06F00881E8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED5234EB205891C400DE83FF /* ROI */;
+			targetProxy = ED197D252059A06F00881E8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ED5234F3205891C400DE83FF /* Main.storyboard */ = {
@@ -183,6 +276,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		ED197D282059A06F00881E8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YHHN4HBB2;
+				INFOPLIST_FILE = ROITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FernandoRomany.ROITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ROI.app/ROI";
+			};
+			name = Debug;
+		};
+		ED197D292059A06F00881E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YHHN4HBB2;
+				INFOPLIST_FILE = ROITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FernandoRomany.ROITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ROI.app/ROI";
+			};
+			name = Release;
+		};
 		ED5234FC205891C400DE83FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -323,6 +448,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		ED197D272059A06F00881E8C /* Build configuration list for PBXNativeTarget "ROITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED197D282059A06F00881E8C /* Debug */,
+				ED197D292059A06F00881E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		ED5234E7205891C400DE83FF /* Build configuration list for PBXProject "ROI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
