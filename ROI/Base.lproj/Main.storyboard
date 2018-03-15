@@ -84,17 +84,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjz-c4-woD">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
-                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="b2e-Uc-pap"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="Calculate">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GV8-os-qQV">
                                 <rect key="frame" x="125" y="508" width="70" height="60"/>
                                 <constraints>
@@ -126,7 +115,6 @@
                             <constraint firstItem="daz-gg-aQK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MDb-QC-kwz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="daz-gg-aQK" secondAttribute="trailing" constant="20" id="MPm-8Q-xDo"/>
                             <constraint firstItem="kTk-zp-vqm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Osf-Ki-r4f"/>
-                            <constraint firstItem="Rjz-c4-woD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Vjc-ru-LbG"/>
                             <constraint firstItem="DN1-l0-Mdd" firstAttribute="width" secondItem="daz-gg-aQK" secondAttribute="width" id="Wig-qI-DVV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GV8-os-qQV" secondAttribute="bottom" id="XE5-e1-pkA"/>
                             <constraint firstItem="Ecc-q5-cfW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XzK-xg-qpX"/>
@@ -137,10 +125,8 @@
                             <constraint firstItem="Fg8-Ee-IeU" firstAttribute="top" secondItem="DN1-l0-Mdd" secondAttribute="bottom" constant="35" id="fAA-u4-cRZ"/>
                             <constraint firstItem="zab-zZ-iQS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fBF-4s-7T2"/>
                             <constraint firstItem="GV8-os-qQV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gaX-Dh-78q"/>
-                            <constraint firstItem="Rjz-c4-woD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hfq-Ci-Vel"/>
                             <constraint firstItem="Ecc-q5-cfW" firstAttribute="top" secondItem="Fg8-Ee-IeU" secondAttribute="bottom" constant="10" id="iwk-E7-aSd"/>
                             <constraint firstItem="DN1-l0-Mdd" firstAttribute="centerX" secondItem="daz-gg-aQK" secondAttribute="centerX" id="oap-M6-V7O"/>
-                            <constraint firstItem="Rjz-c4-woD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oyJ-bE-bwv"/>
                             <constraint firstItem="DN1-l0-Mdd" firstAttribute="height" secondItem="daz-gg-aQK" secondAttribute="height" id="xt2-nX-42v"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
