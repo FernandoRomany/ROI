@@ -9,10 +9,10 @@
 import Foundation
 
 class ROI {
-    class func getROI(produceCost: Double, costOfSell: Double, numberOfProductSell: Double, advCost: Double) -> Double {
+    class func getROI(produceCost: Double, costOfSell: Double, numberOfProductSell: Double, advCost: Double) -> String {
         let revenue = costOfSell * numberOfProductSell
         let costOfGoodsSold = produceCost * numberOfProductSell
-        let result = ((revenue - (costOfGoodsSold + advCost)) / (costOfGoodsSold + advCost))
-        return result
+        let result = Float((revenue - (costOfGoodsSold + advCost)) / (costOfGoodsSold + advCost))
+        return "\(result * 100) %"
     }
 }
